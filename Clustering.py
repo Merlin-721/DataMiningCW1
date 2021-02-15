@@ -33,11 +33,12 @@ def plotKmeans(X, clusters, k):
 
     pairs = [pair for pair in itertools.combinations(X.columns,2)]
 
+    
     for pair in pairs:
-
-        colours = iter(cm.rainbow(np.linspace(0, 1, k)))
+        colours = iter(cm.get_cmap("copper")(np.linspace(0, 1, k)))
 
         Xsample = X[[ pair[0] , pair[1]]]
+
         for i in np.unique(clusters):
             c = "Cluster:" + str(i+1)
             plt.scatter(Xsample.iloc[clusters==i,0],Xsample.iloc[clusters==i,1], color=next(colours),label=c)
@@ -46,6 +47,28 @@ def plotKmeans(X, clusters, k):
         plt.savefig(name)
         plt.clf()
 
+def betweenClusterScore(k,fitter):
+    bc = euclidean_distances(fitter.cluster_centers_)
+    dists = 0
+    for c in bc:
+        # square distances
+        c = c[list(c).index(0):]
+        # sum the distances
+        dists += sum([n**2 for n in c])
+    return dists
+
+
+def withinClusterScore(X,clusterLabels,fitter, k):
+    wc = []
+    for i in range(k):
+        dists = 0
+        # get feature vectors
+        clustFeats = X.loc[clusterLabels == i] 
+        for row in clustFeats.iterrows():
+            dist = np.linalg.norm(fitter.cluster_centers_[i] - row[1].values)
+            dists += dist**2
+        wc.append(dists)
+    return dists
 
 # INITIALISATION
 
@@ -62,14 +85,23 @@ for attr in tabl:
 
 # Part 2
 k=3
-fitter, clusters = kmeans(customerData,k)
-plotKmeans(customerData,clusters,k)
+# fitter, clusters = kmeans(customerData,k)
+# plotKmeans(customerData,clusters,k)
 
 # Part 3
 kSet = [3,5,10]
-
+BCs,WCs,ratios = [],[],[]
 for i in kSet:
-    fitter, clusters = kmeans(customerData,i)
-    BC = euclidean_distances(fitter.cluster_centers_) 
-    WC
-    ratio = WC/BC
+    fitter, clusterLabels = kmeans(customerData,i)
+    BC = betweenClusterScore(i,fitter)
+    WC = withinClusterScore(customerData,clusterLabels,fitter,i)
+    BCs.append(BC)
+    WCs.append(WC)
+    ratios.append(BC/WC)
+
+print(BCs)
+print(WCs)
+print(ratios)
+
+    # WC
+    # ratio = WC/BC

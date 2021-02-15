@@ -15,7 +15,7 @@ def missingValues(df):
     nullInstances = df.isnull() # location of null instances
     totalMissing = nullInstances.sum().sum() # sum counts for each column
     Table["number of missing values"] = totalMissing 
-    Table["fraction missing values"] = totalMissing/(df.size-M)
+    Table["fraction of values missing"] = totalMissing/(df.size-M)
 
     nullRows = M - df.dropna().shape[0]
     Table["num of inst's missing values"] = nullRows
@@ -42,21 +42,22 @@ def encodeLabels(df, discClasses):
     return copy
 
 
-def trainTestModel(df):
+def trainTestSplit(df):
+    Xtrain = df.iloc[:,:-1]
+    Ytrain = df["class"]
+    Xtrain, Xtest, Ytrain, Ytest = model_select.train_test_split(Xtrain, Ytrain, random_state=0 )
+    return Xtrain, Xtest, Ytrain, Ytest
 
-    X = df.iloc[:,:-1]
-    Y = df["class"]
-    X_train, X_test, y_train, y_test = model_select.train_test_split(X, Y, random_state=0 )
-
-    # initialise the decision tree
-    clf = tree.DecisionTreeClassifier( random_state = 0 )
-    # fit the tree model to the training data
-    clf.fit(X_train, y_train)
-
-    testScore = clf.score(X_test, y_test)
+def trainModel(Xtrain, Ytrain):
+    clf = tree.DecisionTreeClassifier(random_state=0)
+    clf.fit(Xtrain,Ytrain)
+    return clf
+    
+def testModel(model,Xtest,Ytest):
+    testScore = model.score(Xtest, Ytest)
     errorRate = 1-testScore
-
     return errorRate 
+
 
 
 # splits dataset into 3 sets:
@@ -64,8 +65,6 @@ def trainTestModel(df):
 # only instances with NaN
 # 50/50 NaN/non-NaN
 def splitDataSet(df):
-    # noNan  = df[~df.isin(["missing"]).any(axis=1)]
-    # allNan = df[df.isin(["missing"]).any(axis=1)]
     noNan = df.dropna()
     allNan = df[df.isna().any(axis=1)]
 
@@ -79,27 +78,24 @@ def missingToModal(df):
     dfModal = df.copy(deep = True)
     for col in dfModal:
         dfModal[col].fillna(dfModal[col].mode()[0],inplace=True)
-        # column = dfModal[col]
-        # vals,counts = np.unique(column[~np.isnan(column)],return_counts=True)
-        # vals = np.unique(column[~np.isna(column)])
-        # index = np.argmax(counts)
-        # dfModal[col].fillna(vals[index])
-        # np.where(dfModal[col] != 'missing',dfModal[col], vals[index])
     return dfModal
     
 
 
-adultDataOrig = pd.read_csv("./data/adult.csv", dtype=str).drop("fnlwgt",1)
+#*****************
+# Initialisation
+# ****************
 
+adultDataOrig = pd.read_csv("./data/adult.csv", dtype=str).drop("fnlwgt",1)
 adultData = adultDataOrig.copy(deep=True)
 
-#****************
+#*****************
 # Part 1
 # ****************
 missing = missingValues(adultData)
 print(missing)
 
-#****************
+#*****************
 # Part 2
 # ****************
 
@@ -111,35 +107,43 @@ dfDiscrete = encodeLabels(adultData,discClasses)
 for col in dfDiscrete.columns:
     print("{} : {}".format(col, np.unique(getattr(dfDiscrete,col))))
 
-#****************
+#*****************
 # Part 3
 #****************
 
-errorRate = trainTestModel(dfDiscrete)
-print("error rate = ", errorRate)
+Xtrain, Xtest, Ytrain, Ytest = trainTestSplit(dfDiscrete)
+model = trainModel(Xtrain,Ytrain)
+errorRate = testModel(model,Xtest,Ytest)
+print("Ignored missing attr's error rate = ", errorRate)
 
-#****************
+#*****************
 # Part 4
 # ****************
 
-# D - entire dataset (adultData)
-
-# D' - dataset with all missing values + same number without missing values
-
-# D'1 - convert NaN to 'missing'
-
-# D'2 - replace NaN with modal column value
+# D   - entire dataset (adultData)
+# D'  - dataset with all missing values + same number without missing values
+# D'1 - converted NaN to 'missing'
+# D'2 - replaced NaN with modal column value
 
 D1 = splitDataSet(adultDataOrig) # contains NaN
-# D1.fillna("missing", inplace = True)
-
 D2 = missingToModal(D1)
 
 D1Encoded = encodeLabels(D1,discClasses)
 D2Encoded = encodeLabels(D2,discClasses)
 
-errorD1 = trainTestModel(D1Encoded)
-print(errorD1)
-errorD2 = trainTestModel(D2Encoded)
-print(errorD2)
+
+
+Xtrain = D1Encoded.iloc[:,:-1]
+Ytrain = D1Encoded.iloc[:,-1]
+model = trainModel(Xtrain,Ytrain)
+errorRate = testModel(model,Xtest,Ytest)
+print("D1 error rate = ", errorRate)
+
+
+Xtrain = D2Encoded.iloc[:,:-1]
+Ytrain = D2Encoded.iloc[:,-1]
+model = trainModel(Xtrain,Ytrain)
+errorRate = testModel(model,Xtest,Ytest)
+print("D2 error rate = ", errorRate)
+
 

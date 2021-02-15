@@ -79,9 +79,9 @@ import sklearn.metrics as metrics
 # Y = dfDiscrete["class"]
 # del dfDiscrete["class"]
 
-X_train, X_test, y_train, y_test = model_select.train_test_split( dfDiscrete.values, Y, random_state=0 )
-M_train = len( X_train )
-M_test = len( X_test )
+Xtrain, Xtest, Ytrain, Ytest = model_select.train_test_split( dfDiscrete.values, Y, random_state=0 )
+M_train = len( Xtrain )
+M_test = len( Xtest )
 # print('number of training instances = ' + str( M_train ))
 # print('number of test instances = ' + str( M_test ))
 
@@ -89,22 +89,22 @@ M_test = len( X_test )
 clf = tree.DecisionTreeClassifier( random_state = 0 )
 
 # fit the tree model to the training data
-clf.fit( X_train, y_train )
+clf.fit( Xtrain, Ytrain )
 
 # predict the labels for the test set
-y_hat = clf.predict( X_test )
+y_hat = clf.predict( Xtest )
 
 
 # count the number of correctly predicted labels
 # count = 0.0
 # for i in range( M_test ):
-#     if ( y_hat[i] == np.array(y_test)[i] ):
+#     if ( y_hat[i] == np.array(Ytest)[i] ):
 #         count += 1
 # score = ( count / M_test ) # score is proportion of correct predictions
 
-trainScore = clf.score(X_train, y_train)
-testScore = clf.score(X_test, y_test)
-accuracy = metrics.accuracy_score(y_test,y_hat)
+trainScore = clf.score(Xtrain, Ytrain)
+testScore = clf.score(Xtest, Ytest)
+accuracy = metrics.accuracy_score(Ytest,y_hat)
 
 errorRate = 1-testScore
 # print('training score = ', trainScore)
