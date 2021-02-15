@@ -6,12 +6,19 @@ import sklearn.model_selection as model_select
 import sklearn.metrics as metrics
 
 def missingValues(df):
+    '''
+    Takes the dataset and outputs a table of specific information
 
-    M = df.shape[0]
+    Args: df -- Dataset to find values of
+
+    Returns: Table -- Dictionary of values
+    '''
 
     Table = {}
 
+    M = df.shape[0]
     Table["number of instances"] = M
+
     nullInstances = df.isnull() # location of null instances
     totalMissing = nullInstances.sum().sum() # sum counts for each column
     Table["number of missing values"] = totalMissing 
@@ -22,49 +29,98 @@ def missingValues(df):
     Table["fraction of inst's missing values"] = nullRows/M
     return Table
 
-# converts NaN to missing
-# and converts values to discrete values
 def discreteClasses(df):
+    '''
+    Converts a dataframe to discrete values using sklearn LabelEnconder 
+    Converts NaN to missing 
+
+    Args: df -- Pandas dataframe
+
+    Returns: discClasses -- Dataframe of discrete classes'''
+
     df.fillna("missing", inplace = True)
+
     discClasses = {}
+
     for col in df:
         le = preprocessing.LabelEncoder()
         le.fit(df[col])
         discClasses[col] = le
+
     return discClasses
 
 
 def encodeLabels(df, discClasses):
+    '''
+    Encodes a dataframe using discrete label template
+
+    Args: df -- Dataframe to be converted
+        discClasses -- template of discrete classes to use
+
+    Returns: copy -- Dataframe of discrete classes
+    '''
+
     df.fillna("missing", inplace = True)
+
     copy = df.copy(deep = True)
+
     for col in copy:
         copy[col] = discClasses[col].transform(copy[col])
     return copy
 
 
 def trainTestSplit(df):
+    '''
+    Splits dataframe to train and test sets.
+
+    Args: df -- Dataframe to split
+    
+    Returns: Xtrain, Xtest, Ytrain, Ytest 
+            -- X (features) and Y (labels) train and test sets 
+    '''
+
     Xtrain = df.iloc[:,:-1]
     Ytrain = df["class"]
     Xtrain, Xtest, Ytrain, Ytest = model_select.train_test_split(Xtrain, Ytrain, random_state=0 )
     return Xtrain, Xtest, Ytrain, Ytest
 
 def trainModel(Xtrain, Ytrain):
+    '''
+    Trains a decision tree classifier 
+
+    Args: Xtrain, Ytrain -- Training features and labels to train on
+
+    Returns: clf -- trained model 
+    '''
+
     clf = tree.DecisionTreeClassifier(random_state=0)
     clf.fit(Xtrain,Ytrain)
     return clf
     
 def testModel(model,Xtest,Ytest):
+    ''' 
+    Tests model on input data and returns error rate
+    
+    Args: model -- model to test
+        Xtest, Ytest -- test data and labels
+    
+    Returns: errorRate -- rate of error of model
+    '''
+
     testScore = model.score(Xtest, Ytest)
     errorRate = 1-testScore
     return errorRate 
 
 
-
-# splits dataset into 3 sets:
-# instances with NaN removed
-# only instances with NaN
-# 50/50 NaN/non-NaN
 def splitDataSet(df):
+    '''
+    Creates dataset comprised of 50% examples missing values
+    and 50% without missing values from the input dataset
+
+    Args: df -- Dataset to manipulate
+
+    Returns: halfNan -- Dataset with 50% of examples containing at least one NaN
+    '''
     noNan = df.dropna()
     allNan = df[df.isna().any(axis=1)]
 
@@ -75,6 +131,13 @@ def splitDataSet(df):
 # converts values with 'missing' to 
 # most common value in column
 def missingToModal(df):
+    '''
+    Replaces NaN values with modal attribute value
+
+    Args: df -- Dataset
+
+    Returns: dfModal -- Datset with replaced NaN values with modal value
+    '''
     dfModal = df.copy(deep = True)
     for col in dfModal:
         dfModal[col].fillna(dfModal[col].mode()[0],inplace=True)
