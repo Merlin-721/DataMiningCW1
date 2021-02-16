@@ -146,5 +146,8 @@ This will return a high value if the clusters are separated well.
 The within-cluster score was also calculated. This is a measure of the cluster density, which, for good clusters, should be high.
 
 To compare the clustering between these different k values, the ratio of between-cluster score to within-cluster score was calculated.
-On its own, this is a relatively useless metric due to the different k values, so it must be normalised. To do this, the Calinski-Harabaz
-Index  was used.
+On its own, this is a relatively useless metric due to the different k values, so it must be normalised. To do this, the Calinski-Harabasz
+index  was used. 
+
+The Calinski-Harabasz index is a measure of separation and density of clusters. To score highly, the clusters should be well separated and
+dense. This index showed the best k-value was 5, with a score of 215. Following this were 3 then 10, with scores of 210 and 206 respectively. 
