@@ -89,3 +89,22 @@ on unseen data, i.e., manipulating the data in this way may hinder the accuracy 
 
 Given the classifiers were trained on data where 50% of instances had at least one missing value, it is possible there was bias in the 
 training, as none of the testing examples contained any missing data.
+
+
+2.0
+
+Clustering 
+
+This section uses data from.... 
+A bit about the dataset ************
+
+2.1
+
+The following data was extracted from the dataset:
+
+**Table******
+
+
+2.2 
+
+Computing K-means clustering with k=3 yielded the following pairwise scatterplots. 

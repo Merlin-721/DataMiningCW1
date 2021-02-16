@@ -68,7 +68,9 @@ def plotKmeans(X, clusters, k):
         for i in np.unique(clusters):
             c = "Cluster:" + str(i+1)
             plt.scatter(Xsample.iloc[clusters==i,0],Xsample.iloc[clusters==i,1], color=next(colours),label=c)
-
+        plt.suptitle(str(pair[0] + " vs " + pair[1]),fontsize=20)
+        plt.xlabel(pair[0], fontsize=15)
+        plt.ylabel(pair[1], fontsize=15)
         name = (pair[0] + " " + pair[1] + ".png")
         plt.savefig(name)
         plt.clf()
@@ -91,28 +93,28 @@ def betweenClusterScore(fitter):
     return dists
 
 
-def withinClusterScore(X,clusterLabels,fitter):
-    '''
-    Calculates score within cluster
-    i.e., sum of squared euclidean distances to cluster centre 
+# def withinClusterScore(X,clusterLabels,fitter):
+#     '''
+#     Calculates score within cluster
+#     i.e., sum of squared euclidean distances to cluster centre 
 
-    Args: X -- Dataset
-          clusterLabels -- Cluster labels for each dataset instance
-          fitter -- trained K-means model
+#     Args: X -- Dataset
+#           clusterLabels -- Cluster labels for each dataset instance
+#           fitter -- trained K-means model
 
-    Returns: dists -- Array of k within-cluster distances
-    '''
+#     Returns: dists -- Array of k within-cluster distances
+#     '''
 
-    k = fitter.n_clusters
-    wc = []
-    for i in range(k):
-        dists = 0
-        clustFeats = X.loc[clusterLabels == i] # get features in cluster i
-        for row in clustFeats.iterrows():
-            dist = np.linalg.norm(fitter.cluster_centers_[i] - row[1].values)
-            dists += dist**2
-        wc.append(dists)
-    return dists
+#     k = fitter.n_clusters
+#     wc = []
+#     for i in range(k):
+#         dists = 0
+#         clustFeats = X.loc[clusterLabels == i] # get features in cluster i
+#         for row in clustFeats.iterrows():
+#             dist = np.linalg.norm(fitter.cluster_centers_[i] - row[1].values)
+#             dists += dist**2
+#         wc.append(dists)
+#     return dists
 
 
 
@@ -151,7 +153,8 @@ BCs,WCs,ratios = [],[],[]
 for i in kSet:
     fitter, clusterLabels = kmeans(customerData,i)
     BC = betweenClusterScore(fitter)
-    WC = withinClusterScore(customerData,clusterLabels,fitter)
+    # WC = withinClusterScore(customerData,clusterLabels,fitter)
+    WC = fitter.inertia_
     BCs.append(BC)
     WCs.append(WC)
     ratios.append(BC/WC)
