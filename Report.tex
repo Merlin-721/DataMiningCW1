@@ -6,6 +6,19 @@
         left=20mm,
         top=20mm
 }
+
+\usepackage[demo]{graphicx}
+\usepackage{subfig}
+% \usepackage{subcaption}
+\usepackage{caption}
+
+
+
+\newcommand{\imWidth}{8cm}
+
+
+
+
 \title{Data Mining CW1}
 
 \author{Merlin Lindsay\\
@@ -212,6 +225,154 @@ Computing K-means clustering with k=3 yielded the following results. Each of the
 based on their entire feature vector. Since it is not possible to view the relationship between more than three attributes simultaneously,
 and displaying 3D plots on a 2D page can be unclear, pairwise scatterplots were created. These plots can be seen below.
 
+
+        % \begin{figure}
+        %         \centering
+        %         \begin{tabular}{cc}
+        %         \subcaptionbox{caption\label{1}}{\includegraphics[width = 1.5in]{Fresh_Delicassen.png}} &
+        %         \subcaptionbox{caption\label{2}}{\includegraphics[width = 1.5in]{Detergents_Paper_Delicassen.png}} \\
+        %         \subcaptionbox{caption\label{1}}{\includegraphics[width = 1.5in]{Fresh_Delicassen.png}} &
+        %         \subcaptionbox{caption\label{2}}{\includegraphics[width = 1.5in]{Detergents_Paper_Delicassen.png}} \\
+        %         \subcaptionbox{caption\label{1}}{\includegraphics[width = 1.5in]{Fresh_Delicassen.png}} &
+        %         \subcaptionbox{caption\label{2}}{\includegraphics[width = 1.5in]{Detergents_Paper_Delicassen.png}} \\
+        %         \subcaptionbox{caption\label{1}}{\includegraphics[width = 1.5in]{Fresh_Delicassen.png}} &
+        %         \subcaptionbox{caption\label{2}}{\includegraphics[width = 1.5in]{Detergents_Paper_Delicassen.png}} \\
+        %         \subcaptionbox{caption\label{1}}{\includegraphics[width = 1.5in]{Fresh_Delicassen.png}} &
+        %         \subcaptionbox{caption\label{2}}{\includegraphics[width = 1.5in]{Detergents_Paper_Delicassen.png}} \\
+        %         \end{tabular}
+        %         \caption{caption}
+        %         \label{3}
+        %         \end{figure}
+
+
+
+
+
+        \begin{figure}
+                \begin{tabular}{cccc}
+                \subfloat[Fresh vs Delicatessen]{\includegraphics[width = \imWidth]{Fresh_Delicassen.png}} &
+                \subfloat[Detergents\/Paper vs Delicassen]{\includegraphics[width = \imWidth]{Detergents_Paper_Delicassen.png}}\\
+                \subfloat[Fresh vs Detergents\/Paper]{\includegraphics[width = \imWidth]{Fresh_Detergents_Paper.png}} &
+                \subfloat[Fresh vs Frozen]{\includegraphics[width = \imWidth]{Fresh_Frozen.png}}\\
+                \subfloat[Fresh vs Grocery]{\includegraphics[width = \imWidth]{Fresh_Grocery.png}} &
+                \subfloat[Fresh vs Milk]{\includegraphics[width = \imWidth]{Fresh_Milk.png}}\\
+                \subfloat[Frozen vs Delicatessen]{\includegraphics[width = \imWidth]{Frozen_Delicassen.png}} &
+                \subfloat[Frozen vs Detergents\/Paper]{\includegraphics[width = \imWidth]{Frozen_Detergents_Paper.png}}\\
+                \subfloat[Grocery vs Delicatessen]{\includegraphics[width = \imWidth]{Grocery_Delicassen.png}} &
+                \subfloat[Grocery vs Detergents\/Paper]{\includegraphics[width = \imWidth]{Grocery_Detergents_Paper.png}}\\
+                \subfloat[Grocery vs Frozen]{\includegraphics[width = \imWidth]{Grocery_Frozen.png}}&
+                \subfloat[Milk vs Delicatessen]{\includegraphics[width = \imWidth]{Milk_Delicassen.png}}\\
+                \subfloat[Milk vs Detergents\/Paper]{\includegraphics[width = \imWidth]{Milk_Detergents_Paper.png}}&&
+                \subfloat[Milk vs Frozen]{\includegraphics[width = \imWidth]{Milk_Frozen.png}}\\
+                \subfloat[Milk vs Grocery]{\includegraphics[width = \imWidth]{Milk_Grocery.png}}
+                \end{tabular}
+                \caption{pairs}
+        \end{figure}
+
+
+
+
+
+
+% \begin{figure}
+%         \includegraphics[width=\imWidth]{Fresh_Delicassen.png}
+%         \caption{Fresh vs Delicatessen}
+%         \caption{fig:freshDel}
+% \end{figure}
+
+
+% \begin{figure}
+%         \includegraphics[width=\imWidth]{Detergents_Paper_Delicassen.png}
+%         \caption{Fresh vs Delicatessen}
+%         \caption{fig:freshDel}
+% \end{figure}
+
+% \begin{figure}
+%         \includegraphics[width=\imWidth]{Fresh_Detergents_Paper.png}
+%         \caption{Fresh vs Delicatessen}
+%         \caption{fig:freshDel}
+% \end{figure}
+
+% \begin{figure}
+%         \includegraphics[width=\imWidth]{Fresh_Frozen.png}
+%         \caption{Fresh vs Delicatessen}
+%         \caption{fig:freshDel}
+% \end{figure}
+
+% \begin{figure}
+%         \includegraphics[width=\imWidth]{Fresh_Grocery.png}
+%         \caption{Fresh vs Delicatessen}
+%         \caption{fig:freshDel}
+% \end{figure}
+
+% \begin{figure}
+%         \includegraphics[width=\imWidth]{Fresh_Milk.png}
+%         \caption{Fresh vs Delicatessen}
+%         \caption{fig:freshDel}
+% \end{figure}
+
+% \begin{figure}
+%         \includegraphics[width=\imWidth]{Frozen_Delicassen.png}
+%         \caption{Fresh vs Delicatessen}
+%         \caption{fig:freshDel}
+% \end{figure}
+
+% \begin{figure}
+%         \includegraphics[width=\imWidth]{Frozen_Detergents_Paper.png}
+%         \caption{Fresh vs Delicatessen}
+%         \caption{fig:freshDel}
+% \end{figure}
+
+% \begin{figure}
+%         \includegraphics[width=\imWidth]{Grocery_Delicassen.png}
+%         \caption{Fresh vs Delicatessen}
+%         \caption{fig:freshDel}
+% \end{figure}
+
+% \begin{figure}
+%         \includegraphics[width=\imWidth]{Grocery_Detergents_Paper.png}
+%         \caption{Fresh vs Delicatessen}
+%         \caption{fig:freshDel}
+% \end{figure}
+
+% \begin{figure}
+%         \includegraphics[width=\imWidth]{Grocery_Frozen.png}
+%         \caption{Fresh vs Delicatessen}
+%         \caption{fig:freshDel}
+% \end{figure}
+
+% \begin{figure}
+%         \includegraphics[width=\imWidth]{Milk_Delicassen.png}
+%         \caption{Fresh vs Delicatessen}
+%         \caption{fig:freshDel}
+% \end{figure}
+
+% \begin{figure}
+%         \includegraphics[width=\imWidth]{Milk_Detergents_Paper.png}
+%         \caption{Fresh vs Delicatessen}
+%         \caption{fig:freshDel}
+% \end{figure}
+
+% \begin{figure}
+%         \includegraphics[width=\imWidth]{Milk_Frozen.png}
+%         \caption{Fresh vs Delicatessen}
+%         \caption{fig:freshDel}
+% \end{figure}
+
+% \begin{figure}
+%         \includegraphics[width=\imWidth]{Milk_Grocery.png}
+%         \caption{Fresh vs Delicatessen}
+%         \caption{fig:freshDel}
+% \end{figure}
+
+
+
+
+
+
+
+
+
 *** scatterplots****
 
 It should be noted that some pairwise attributes are better at separating the data than others, when using three clusters. In
@@ -237,7 +398,7 @@ more inelastic, despite always being low.\\
 \subsection{Cluster Evaluation} 
 
 \noindent This section contains the cluster evaluation for different values of k in the K-means calculation. The three values of k to be evaluated
-are the set {3,5,10}. As part of the cluster evaluation, the between-cluster score is calculated. This measures the separation of the clusters from one-another.
+are the set \{3,5,10\}. As part of the cluster evaluation, the between-cluster score is calculated. This measures the separation of the clusters from one-another.
 This will return a high value if the clusters are separated well.The within-cluster score was also calculated. This is a measure of the cluster density, which, for good clusters, should be high.\\
 To compare the clustering between these different k values, the ratio of between-cluster score to within-cluster score was calculated.\\
 The results are shown in Table \ref{table:kvals}, rounded to 3 significant figures.
@@ -282,7 +443,7 @@ The calculated values of this index are shown in Table \ref{table:cali}
         \hline
         Metric & 3 & 5 & 10\\
         \hline
-        Calinksi-Harabaz's & 210.14555420228274 &  215.0578377793695 & 206.17005431437423\\
+        Calinksi-Harabaz's & 210.1 &  215.06 & 206.17\\
         \hline
        \end{tabular}
 

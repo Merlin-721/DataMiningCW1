@@ -69,10 +69,10 @@ def plotKmeans(X, clusters, k):
         for i in np.unique(clusters):
             c = "Cluster:" + str(i+1)
             plt.scatter(Xsample.iloc[clusters==i,0],Xsample.iloc[clusters==i,1], color=next(colours),label=c)
-        plt.suptitle(str(pair[0] + " vs " + pair[1] + ", k = " + str(k)),fontsize=20)
+        # plt.suptitle(str(pair[0] + " vs " + pair[1] + ", k = " + str(k)),fontsize=20)
         plt.xlabel(pair[0], fontsize=15)
         plt.ylabel(pair[1], fontsize=15)
-        name = (pair[0] + " " + pair[1] + ".png")
+        name = (pair[0] + "_" + pair[1] + ".png")
         plt.savefig(name)
         plt.clf()
 
@@ -122,8 +122,8 @@ for attr in tabl:
 # ****************
 
 k=3
-# fitter, clusters = kmeans(customerData,k)
-# plotKmeans(customerData,clusters,k)
+fitter, clusters = kmeans(customerData,k)
+plotKmeans(customerData,clusters,k)
 
 
 # ****************
