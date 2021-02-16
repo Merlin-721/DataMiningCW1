@@ -125,6 +125,10 @@ def splitDataSet(df):
     allNan = df[df.isna().any(axis=1)]
 
     halfNan = allNan.append(noNan.sample(allNan.shape[0]))
+
+    # Shuffle datapoints
+    halfNan = halfNan.sample(frac=1)
+    
     return halfNan 
 
 
@@ -145,21 +149,21 @@ def missingToModal(df):
     
 
 
-#*****************
+# ****************
 # Initialisation
 # ****************
 
 adultDataOrig = pd.read_csv("./data/adult.csv", dtype=str).drop("fnlwgt",1)
 adultData = adultDataOrig.copy(deep=True)
 
-#*****************
-# Part 1
+# ****************
+# 1.1
 # ****************
 missing = missingValues(adultData)
 print(missing)
 
-#*****************
-# Part 2
+# ****************
+# 1.2
 # ****************
 
 # get discrete classes
@@ -170,17 +174,20 @@ dfDiscrete = encodeLabels(adultData,discClasses)
 for col in dfDiscrete.columns:
     print("{} : {}".format(col, np.unique(getattr(dfDiscrete,col))))
 
-#*****************
-# Part 3
-#****************
+# ****************
+# 1.3
+# ****************
 
-Xtrain, Xtest, Ytrain, Ytest = trainTestSplit(dfDiscrete)
+dfDropNa = adultData.dropna().copy(deep = True)
+dfDropNaEncoded = encodeLabels(dfDropNa, discClasses)
+Xtrain, Xtest, Ytrain, Ytest = trainTestSplit(dfDropNaEncoded)
 model = trainModel(Xtrain,Ytrain)
 errorRate = testModel(model,Xtest,Ytest)
 print("Ignored missing attr's error rate = ", errorRate)
 
-#*****************
-# Part 4
+
+# ****************
+# 1.4
 # ****************
 
 # D   - entire dataset (adultData)
@@ -188,14 +195,15 @@ print("Ignored missing attr's error rate = ", errorRate)
 # D'1 - converted NaN to 'missing'
 # D'2 - replaced NaN with modal column value
 
+# Create new datasets
 D1 = splitDataSet(adultDataOrig) # contains NaN
 D2 = missingToModal(D1)
 
+# Encode datasets
 D1Encoded = encodeLabels(D1,discClasses)
 D2Encoded = encodeLabels(D2,discClasses)
 
-
-
+# Train on D1 data and test on D
 Xtrain = D1Encoded.iloc[:,:-1]
 Ytrain = D1Encoded.iloc[:,-1]
 model = trainModel(Xtrain,Ytrain)
@@ -203,6 +211,7 @@ errorRate = testModel(model,Xtest,Ytest)
 print("D1 error rate = ", errorRate)
 
 
+# Train on D2 data and test on D
 Xtrain = D2Encoded.iloc[:,:-1]
 Ytrain = D2Encoded.iloc[:,-1]
 model = trainModel(Xtrain,Ytrain)
