@@ -3,6 +3,7 @@ import pandas as pd
 
 from sklearn.cluster import KMeans
 from sklearn.metrics.pairwise import euclidean_distances
+from sklearn.metrics import calinski_harabasz_score
 
 import matplotlib.pyplot as plt
 from matplotlib import cm
@@ -68,7 +69,7 @@ def plotKmeans(X, clusters, k):
         for i in np.unique(clusters):
             c = "Cluster:" + str(i+1)
             plt.scatter(Xsample.iloc[clusters==i,0],Xsample.iloc[clusters==i,1], color=next(colours),label=c)
-        plt.suptitle(str(pair[0] + " vs " + pair[1]),fontsize=20)
+        plt.suptitle(str(pair[0] + " vs " + pair[1] + ", k = " + str(k)),fontsize=20)
         plt.xlabel(pair[0], fontsize=15)
         plt.ylabel(pair[1], fontsize=15)
         name = (pair[0] + " " + pair[1] + ".png")
@@ -78,45 +79,25 @@ def plotKmeans(X, clusters, k):
 def betweenClusterScore(fitter):
     '''
     Calculates between cluster score of model
-    i.e., between centres of clusters
+    i.e., between cluster centres
 
     Args: fitter -- Trained k-means model
 
     Returns: dists -- Array of pairwise distances from each cluster to one another
     '''
+    # Get Euclid distances between cluster centres
     bc = euclidean_distances(fitter.cluster_centers_)
     dists = 0
     for c in bc:
+        # Filter out cluster dist to itself
         c = c[list(c).index(0):]
-        # sum the squared distances
+        # Sum the squared distances
         dists += sum([n**2 for n in c])
     return dists
 
-
-# def withinClusterScore(X,clusterLabels,fitter):
-#     '''
-#     Calculates score within cluster
-#     i.e., sum of squared euclidean distances to cluster centre 
-
-#     Args: X -- Dataset
-#           clusterLabels -- Cluster labels for each dataset instance
-#           fitter -- trained K-means model
-
-#     Returns: dists -- Array of k within-cluster distances
-#     '''
-
-#     k = fitter.n_clusters
-#     wc = []
-#     for i in range(k):
-#         dists = 0
-#         clustFeats = X.loc[clusterLabels == i] # get features in cluster i
-#         for row in clustFeats.iterrows():
-#             dist = np.linalg.norm(fitter.cluster_centers_[i] - row[1].values)
-#             dists += dist**2
-#         wc.append(dists)
-#     return dists
-
-
+# def calinskiHarabaz(ratio,k,clusterLabels):
+#     n = len(clusterLabels)
+#     return ratio * (n-k)/(k-1)
 
 
 # ****************
@@ -141,24 +122,28 @@ for attr in tabl:
 # ****************
 
 k=3
-fitter, clusters = kmeans(customerData,k)
-plotKmeans(customerData,clusters,k)
+# fitter, clusters = kmeans(customerData,k)
+# plotKmeans(customerData,clusters,k)
 
 
 # ****************
 # 2.3
 # ****************
 kSet = [3,5,10]
-BCs,WCs,ratios = [],[],[]
+BCs,WCs,ratios,caliHs = [],[],[],[]
 for i in kSet:
     fitter, clusterLabels = kmeans(customerData,i)
     BC = betweenClusterScore(fitter)
-    # WC = withinClusterScore(customerData,clusterLabels,fitter)
     WC = fitter.inertia_
+    ratio = BC/WC
+    # caliH = calinskiHarabaz(ratio,k,clusterLabels)
+    caliH = calinski_harabasz_score(customerData,clusterLabels)
     BCs.append(BC)
     WCs.append(WC)
-    ratios.append(BC/WC)
+    ratios.append(ratio)
+    caliHs.append(caliH)
 
-print(BCs)
-print(WCs)
-print(ratios)
+print("BC Scores: " + str(BCs))
+print("WC Scores: " + str(WCs))
+print("Ratios: " + str(ratios))
+print("Calinksi-Harabaz's: " + str(caliHs))

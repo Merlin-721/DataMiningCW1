@@ -91,6 +91,10 @@ Given the classifiers were trained on data where 50% of instances had at least o
 training, as none of the testing examples contained any missing data.
 
 
+As an alternative means of evaluating the performace of the classifier models, k-fold cross validation could have been used. This would assess the 
+average score of the models over the entire dataset D, as opposed to a single subset.
+
+
 2.0
 
 Clustering 
@@ -107,4 +111,40 @@ The following data was extracted from the dataset:
 
 2.2 
 
-Computing K-means clustering with k=3 yielded the following pairwise scatterplots. 
+Computing K-means clustering with k=3 yielded the following results. Each of the instances were clustered into three groups, 
+based on their entire feature vector. Since it is not possible to view the relationship between more than three attributes simultaneously,
+and displaying 3D plots on a 2D page can be unclear, pairwise scatterplots were created. These plots can be seen below.
+
+*** scatterplots****
+
+It should be noted that some pairwise attributes are better at separating the data than others, when using three clusters. In 
+several of the scatterplots, the clusters overlap significantly, with little observable distinction between them. For example in
+the 'Frozen vs Delicatessen' plot, without the differentiation by the group colours, it would be impossible to tell by visual
+observation which datapoints belonged to which cluster. If the dimensionality of the entire dataset were to be reduced for 
+simplification, it would make sense to keep only one attribute in this pair. The same can be said for the majority of the pairs.
+In fact, the only pairs with much visually observable distinction betweeen clusters are 'Fresh vs Grocery', 'Fresh vs Milk',
+'Grocery vs Detergents/Paper', and still this observation is subjective. 
+
+There is a strong linear correlation between Detergents/Paper and Grocery, suggesting an increase in one of these attributes
+would be observed with a rise in the other. A less strong, but still present, linear relationship exists with Milk and Grocery, 
+and Milk and Detergents/Paper. 
+
+For many of the pairs containing Delicatessen, it appears there is inelastic expenditure on Delicatessen, where high expenditure in the
+opponent attribute gives little to no rise in expenditure on Delicatessen. For example in the Grocery vs Delicatessen pair, the rise in
+expenditure in Grocery yields little growth in expenditure on Delicatessen. Perhaps even stronger examples are the 'Fresh vs Delicatessen',
+and 'Detergents/Paper vs Delicatessen pairs. There are some outliers present in the data, though this relationship with Delicatessen to 
+other attributes may suggest Delicatessen expenditure is consistent, or not considered a choice, meaning the demand for Delicatessen is 
+more inelastic, despite always being low.
+
+
+2.3 
+
+This section contains the cluster evaluation for different values of k in the K-means calculation. The three values of k to be evaluated
+are the set {3,5,10}.
+As part of the cluster evaluation, the between-cluster score is calculated. This measures the separation of the clusters from one-another.
+This will return a high value if the clusters are separated well.
+The within-cluster score was also calculated. This is a measure of the cluster density, which, for good clusters, should be high.
+
+To compare the clustering between these different k values, the ratio of between-cluster score to within-cluster score was calculated.
+On its own, this is a relatively useless metric due to the different k values, so it must be normalised. To do this, the Calinski-Harabaz
+Index  was used.
