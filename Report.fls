@@ -76,8 +76,6 @@ INPUT C:\Users\merli\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.s
 INPUT C:\Users\merli\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
 INPUT C:\Users\merli\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
 INPUT C:\Users\merli\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
-INPUT C:\Users\merli\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphics.sty
-INPUT C:\Users\merli\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphics.sty
 INPUT C:\Users\merli\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
 INPUT C:\Users\merli\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphics.sty
 INPUT C:\Users\merli\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphics.sty
@@ -189,27 +187,139 @@ INPUT C:\Users\merli\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr9.tfm
 INPUT C:\Users\merli\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Users\merli\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\merli\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
-INPUT C:\Users\merli\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
 OUTPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Report.pdf
 INPUT C:\Users\merli\AppData\Local\MiKTeX\pdftex\config\pdftex.map
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Fresh_Delicassen.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Fresh_Delicassen.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Fresh_Delicassen.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Fresh_Delicassen.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Fresh_Delicassen.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Fresh_Delicassen.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Fresh_Delicassen.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Detergents_Paper_Delicassen.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Detergents_Paper_Delicassen.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Detergents_Paper_Delicassen.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Detergents_Paper_Delicassen.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Detergents_Paper_Delicassen.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Detergents_Paper_Delicassen.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Detergents_Paper_Delicassen.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Fresh_Detergents_Paper.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Fresh_Detergents_Paper.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Fresh_Detergents_Paper.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Fresh_Detergents_Paper.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Fresh_Detergents_Paper.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Fresh_Detergents_Paper.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Fresh_Detergents_Paper.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Fresh_Frozen.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Fresh_Frozen.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Fresh_Frozen.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Fresh_Frozen.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Fresh_Frozen.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Fresh_Frozen.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Fresh_Frozen.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Fresh_Grocery.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Fresh_Grocery.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Fresh_Grocery.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Fresh_Grocery.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Fresh_Grocery.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Fresh_Grocery.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Fresh_Grocery.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Fresh_Milk.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Fresh_Milk.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Fresh_Milk.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Fresh_Milk.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Fresh_Milk.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Fresh_Milk.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Fresh_Milk.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Frozen_Delicassen.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Frozen_Delicassen.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Frozen_Delicassen.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Frozen_Delicassen.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Frozen_Delicassen.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Frozen_Delicassen.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Frozen_Delicassen.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Frozen_Detergents_Paper.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Frozen_Detergents_Paper.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Frozen_Detergents_Paper.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Frozen_Detergents_Paper.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Frozen_Detergents_Paper.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Frozen_Detergents_Paper.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Frozen_Detergents_Paper.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Grocery_Delicassen.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Grocery_Delicassen.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Grocery_Delicassen.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Grocery_Delicassen.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Grocery_Delicassen.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Grocery_Delicassen.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Grocery_Delicassen.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Grocery_Detergents_Paper.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Grocery_Detergents_Paper.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Grocery_Detergents_Paper.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Grocery_Detergents_Paper.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Grocery_Detergents_Paper.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Grocery_Detergents_Paper.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Grocery_Detergents_Paper.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Grocery_Frozen.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Grocery_Frozen.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Grocery_Frozen.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Grocery_Frozen.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Grocery_Frozen.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Grocery_Frozen.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Grocery_Frozen.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Milk_Delicassen.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Milk_Delicassen.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Milk_Delicassen.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Milk_Delicassen.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Milk_Delicassen.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Milk_Delicassen.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Milk_Delicassen.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Milk_Detergents_Paper.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Milk_Detergents_Paper.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Milk_Detergents_Paper.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Milk_Detergents_Paper.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Milk_Detergents_Paper.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Milk_Detergents_Paper.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Milk_Detergents_Paper.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Milk_Frozen.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Milk_Frozen.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Milk_Frozen.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Milk_Frozen.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Milk_Frozen.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Milk_Frozen.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Milk_Frozen.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Milk_Grocery.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Milk_Grocery.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Milk_Grocery.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Milk_Grocery.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Milk_Grocery.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Milk_Grocery.png
+INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Milk_Grocery.png
 INPUT C:\Users\merli\AppData\Local\Programs\MiKTeX\tex\latex\base\omscmr.fd
 INPUT C:\Users\merli\AppData\Local\Programs\MiKTeX\tex\latex\base\omscmr.fd
 INPUT C:\Users\merli\AppData\Local\Programs\MiKTeX\tex\latex\base\omscmr.fd
 INPUT C:\Users\merli\AppData\Local\Programs\MiKTeX\tex\latex\base\omscmr.fd
 INPUT c:\Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Report.aux
-INPUT C:\Users\merli\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
-INPUT C:\Users\merli\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
 INPUT C:\Users\merli\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\merli\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
+INPUT C:\Users\merli\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
+INPUT C:\Users\merli\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
+INPUT C:\Users\merli\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
+INPUT C:\Users\merli\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
+INPUT C:\Users\merli\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi7.pfb
+INPUT C:\Users\merli\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi7.pfb
 INPUT C:\Users\merli\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
 INPUT C:\Users\merli\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
 INPUT C:\Users\merli\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
 INPUT C:\Users\merli\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
 INPUT C:\Users\merli\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr17.pfb
 INPUT C:\Users\merli\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr17.pfb
+INPUT C:\Users\merli\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr7.pfb
+INPUT C:\Users\merli\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr7.pfb
 INPUT C:\Users\merli\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
 INPUT C:\Users\merli\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
 INPUT C:\Users\merli\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr9.pfb
 INPUT C:\Users\merli\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr9.pfb
 INPUT C:\Users\merli\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\merli\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Users\merli\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy7.pfb
+INPUT C:\Users\merli\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy7.pfb

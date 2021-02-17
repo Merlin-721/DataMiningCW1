@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.16)  16 FEB 2021 18:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.16)  17 FEB 2021 15:33
 entering extended mode
 **"c:/Users/merli/OneDrive - King's College London/modules/Data Mining 7CCSMDM1/Coursework/CW1/Report.tex"
 ("c:/Users/merli/OneDrive - King's College London/modules/Data Mining 7CCSMDM1/Coursework/CW1/Report.tex"
@@ -94,20 +94,20 @@ File: l3backend-pdftex.def 2021-01-09 L3 backend support: PDF output (pdfTeX)
 ) ("c:/Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Report.aux")
 \openout1 = `Report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -164,147 +164,142 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 35.
+(Font)              <12> on input line 37.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 35.
+(Font)              <8> on input line 37.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 35.
-
-
-Package caption Warning: \label without proper reference on input line 53.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `table:metAdult' on page 1 undefined on input line 49.
-
+(Font)              <6> on input line 37.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 55.
+(Font)              <7> on input line 59.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 55.
-
-Package caption Warning: \label without proper reference on input line 90.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `table:discVals' on page 1 undefined on input line 87.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 117--124
-
- []
-
-[1
+(Font)              <5> on input line 59.
+ [1
 
 {C:/Users/merli/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 138--140
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 141--143
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 144--146
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 147--150
-
- []
-
-
-Package caption Warning: \label without proper reference on input line 157.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `table:errs' on page 2 undefined on input line 151.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 172--175
+Underfull \hbox (badness 10000) in paragraph at lines 198--201
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 179--181
+Underfull \hbox (badness 10000) in paragraph at lines 205--207
+
+ []
+
+<Fresh_Delicassen.png, id=19, 462.528pt x 346.896pt>
+File: Fresh_Delicassen.png Graphic file (type png)
+<use Fresh_Delicassen.png>
+Package pdftex.def Info: Fresh_Delicassen.png  used on input line 260.
+(pdftex.def)             Requested size: 156.49014pt x 117.3661pt.
+<Detergents_Paper_Delicassen.png, id=21, 462.528pt x 346.896pt>
+File: Detergents_Paper_Delicassen.png Graphic file (type png)
+<use Detergents_Paper_Delicassen.png>
+Package pdftex.def Info: Detergents_Paper_Delicassen.png  used on input line 261.
+(pdftex.def)             Requested size: 156.49014pt x 117.3661pt.
+<Fresh_Detergents_Paper.png, id=22, 462.528pt x 346.896pt>
+File: Fresh_Detergents_Paper.png Graphic file (type png)
+<use Fresh_Detergents_Paper.png>
+Package pdftex.def Info: Fresh_Detergents_Paper.png  used on input line 262.
+(pdftex.def)             Requested size: 156.49014pt x 117.3661pt.
+<Fresh_Frozen.png, id=23, 462.528pt x 346.896pt>
+File: Fresh_Frozen.png Graphic file (type png)
+<use Fresh_Frozen.png>
+Package pdftex.def Info: Fresh_Frozen.png  used on input line 263.
+(pdftex.def)             Requested size: 156.49014pt x 117.3661pt.
+<Fresh_Grocery.png, id=24, 462.528pt x 346.896pt>
+File: Fresh_Grocery.png Graphic file (type png)
+<use Fresh_Grocery.png>
+Package pdftex.def Info: Fresh_Grocery.png  used on input line 264.
+(pdftex.def)             Requested size: 156.49014pt x 117.3661pt.
+<Fresh_Milk.png, id=25, 462.528pt x 346.896pt>
+File: Fresh_Milk.png Graphic file (type png)
+<use Fresh_Milk.png>
+Package pdftex.def Info: Fresh_Milk.png  used on input line 265.
+(pdftex.def)             Requested size: 156.49014pt x 117.3661pt.
+<Frozen_Delicassen.png, id=26, 462.528pt x 346.896pt>
+File: Frozen_Delicassen.png Graphic file (type png)
+<use Frozen_Delicassen.png>
+Package pdftex.def Info: Frozen_Delicassen.png  used on input line 266.
+(pdftex.def)             Requested size: 156.49014pt x 117.3661pt.
+<Frozen_Detergents_Paper.png, id=27, 462.528pt x 346.896pt>
+File: Frozen_Detergents_Paper.png Graphic file (type png)
+<use Frozen_Detergents_Paper.png>
+Package pdftex.def Info: Frozen_Detergents_Paper.png  used on input line 267.
+(pdftex.def)             Requested size: 156.49014pt x 117.3661pt.
+<Grocery_Delicassen.png, id=28, 462.528pt x 346.896pt>
+File: Grocery_Delicassen.png Graphic file (type png)
+<use Grocery_Delicassen.png>
+Package pdftex.def Info: Grocery_Delicassen.png  used on input line 268.
+(pdftex.def)             Requested size: 156.49014pt x 117.3661pt.
+<Grocery_Detergents_Paper.png, id=29, 462.528pt x 346.896pt>
+File: Grocery_Detergents_Paper.png Graphic file (type png)
+<use Grocery_Detergents_Paper.png>
+Package pdftex.def Info: Grocery_Detergents_Paper.png  used on input line 269.
+(pdftex.def)             Requested size: 156.49014pt x 117.3661pt.
+<Grocery_Frozen.png, id=30, 462.528pt x 346.896pt>
+File: Grocery_Frozen.png Graphic file (type png)
+<use Grocery_Frozen.png>
+Package pdftex.def Info: Grocery_Frozen.png  used on input line 270.
+(pdftex.def)             Requested size: 156.49014pt x 117.3661pt.
+<Milk_Delicassen.png, id=31, 462.528pt x 346.896pt>
+File: Milk_Delicassen.png Graphic file (type png)
+<use Milk_Delicassen.png>
+Package pdftex.def Info: Milk_Delicassen.png  used on input line 271.
+(pdftex.def)             Requested size: 156.49014pt x 117.3661pt.
+<Milk_Detergents_Paper.png, id=32, 462.528pt x 346.896pt>
+File: Milk_Detergents_Paper.png Graphic file (type png)
+<use Milk_Detergents_Paper.png>
+Package pdftex.def Info: Milk_Detergents_Paper.png  used on input line 272.
+(pdftex.def)             Requested size: 156.49014pt x 117.3661pt.
+<Milk_Frozen.png, id=33, 462.528pt x 346.896pt>
+File: Milk_Frozen.png Graphic file (type png)
+<use Milk_Frozen.png>
+Package pdftex.def Info: Milk_Frozen.png  used on input line 273.
+(pdftex.def)             Requested size: 156.49014pt x 117.3661pt.
+<Milk_Grocery.png, id=34, 462.528pt x 346.896pt>
+File: Milk_Grocery.png Graphic file (type png)
+<use Milk_Grocery.png>
+Package pdftex.def Info: Milk_Grocery.png  used on input line 274.
+(pdftex.def)             Requested size: 156.49014pt x 117.3661pt.
+
+Overfull \hbox (47.62627pt too wide) in paragraph at lines 257--276
+ []|  [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 288--295
 
  []
 
 
-Package caption Warning: \label without proper reference on input line 201.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `table:shopMet' on page 3 undefined on input line 194.
-
-
-Overfull \hbox (307.16933pt too wide) in paragraph at lines 252--269
-[][] 
- []
-
-
-LaTeX Warning: Float too large for page by 198.76405pt on input line 270.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 378--385
+Underfull \hbox (badness 10000) in paragraph at lines 296--299
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 386--389
+Underfull \hbox (badness 10000) in paragraph at lines 300--306
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 390--396
-
- []
-
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 401.
-(C:\Users\merli\AppData\Local\Programs\MiKTeX\tex/latex/base\omscmr.fd
+[3] [4 <c:/Users/merli/OneDrive - King's College London/modules/Data Mining 7CCSMDM1/Coursework/CW1/Fresh_Delicassen.png> <c:/Users/merli/OneDrive - King's College London/modules/Data Mining 7CCSMDM1/Coursework/CW1/Detergents_Paper_Delicassen.png> <c:/Users/merli/OneDrive - King's College London/modules/Data Mining 7CCSMDM1/Coursework/CW1/Fresh_Detergents_Paper.png> <c:/Users/merli/OneDrive - King's College London/modules/Data Mining 7CCSMDM1/Coursework/CW1/Fresh_Frozen.png> <c:/Users/merli/OneDrive - King's College London/modules/Data Mining 7CCSMDM1/Coursework/CW1/Fresh_Grocery.png> <c:/Users/merli/OneDrive - King's College London/modules/Data Mining 7CCSMDM1/Coursework/CW1/Fresh_Milk.png> <c:/Users/merli/OneDrive - King's College London/modules/Data Mining 7CCSMDM1/Coursework/CW1/Frozen_Delicassen.png> <c:/Users/merli/OneDrive - King's College London/modules/Data Mining 7CCSMDM1/Coursework/CW1/Frozen_Detergents_Paper.png> <c:/Users/merli/OneDrive - King's College London/modules/Data Mining 7CCSMDM1/Coursework/CW1/Grocery_Delicassen.png> <c:/Users/merli/OneDrive - King's College London/modules/Data Mining 7CCSMDM1/Coursework/CW1/Grocery_Detergents_Paper.png> <c:/Users/merli/OneDrive - King's College London/modules/Data Mining 7CCSMDM1/Coursework/CW1/Grocery_Frozen.png> <c:/Users/merli/OneDrive - King's College London/modules/Data Mining 7CCSMDM1/Coursework/CW1/Milk_Delicassen.png> <c:/Users/merli/OneDrive - King's College London/modules/Data Mining 7CCSMDM1/Coursework/CW1/Milk_Detergents_Paper.png> <c:/Users/merli/OneDrive - King's College London/modules/Data Mining 7CCSMDM1/Coursework/CW1/Milk_Frozen.png> <c:/Users/merli/OneDrive - King's College London/modules/Data Mining 7CCSMDM1/Coursework/CW1/Milk_Grocery.png>]
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 311.
+ (C:\Users\merli\AppData\Local\Programs\MiKTeX\tex/latex/base\omscmr.fd
 File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 401.
-
-
-Package caption Warning: \label without proper reference on input line 409.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `table:kvals' on page 3 undefined on input line 404.
-
-[3] [4]
-
-Package caption Warning: \label without proper reference on input line 441.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `table:cali' on page 5 undefined on input line 434.
-
-[5] ("c:/Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Report.aux")
-
-LaTeX Warning: There were undefined references.
-
- )
-(\end occurred inside a group at level 1)
-
-### simple group (level 1) entered at line 439 ({)
-### bottom level 
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 311.
+ [5] ("c:/Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Report.aux") ) 
 Here is how much of TeX's memory you used:
- 3146 strings out of 479618
- 54062 string characters out of 2865026
- 347713 words of memory out of 3000000
- 20331 multiletter control sequences out of 15000+200000
- 407984 words of font info for 42 fonts, out of 3000000 for 9000
+ 3235 strings out of 479618
+ 56218 string characters out of 2865026
+ 349696 words of memory out of 3000000
+ 20405 multiletter control sequences out of 15000+200000
+ 407676 words of font info for 41 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,15n,79p,344b,431s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/merli/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/merli/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/merli/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/merli/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/merli/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/merli/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/merli/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/merli/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on "c:/Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Report.pdf" (5 pages, 112068 bytes).
+ 71i,15n,79p,349b,447s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/merli/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/merli/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/merli/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/merli/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/merli/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/merli/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/merli/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/merli/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/merli/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/merli/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/merli/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/merli/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on "c:/Users\merli\OneDrive - King's College London\modules\Data Mining 7CCSMDM1\Coursework\CW1\Report.pdf" (5 pages, 399219 bytes).
 PDF statistics:
- 50 PDF objects out of 1000 (max. 8388607)
+ 97 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
 

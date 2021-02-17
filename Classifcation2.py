@@ -69,44 +69,51 @@ def encodeLabels(df, discClasses):
     return copy
 
 
-def trainTestSplit(df):
+def kFoldTest(df):
     '''
-    Splits dataframe to train and test sets.
+    Runs k fold cross validation
 
-    Args: df -- Dataframe to split
-    
-    Returns: Xtrain, Xtest, Ytrain, Ytest 
-            -- X (features) and Y (labels) train and test sets 
+    Args: df -- Data to train and test on 
+
+    Returns: errorRate -- The error rate on the data
     '''
-
     Xtrain = df.iloc[:,:-1]
-    Ytrain = df["class"]
-    Xtrain, Xtest, Ytrain, Ytest = model_select.train_test_split(Xtrain, Ytrain, random_state=0 )
-    return Xtrain, Xtest, Ytrain, Ytest
+    Ytrain = df.iloc[:,-1]
+    clf = tree.DecisionTreeClassifier()
+    scores = model_select.cross_val_score(estimator=clf,X=Xtrain,y=Ytrain,n_jobs=10)
+    errorRate = 1 - np.mean(scores)
+    return errorRate
 
-def trainModel(Xtrain, Ytrain):
+
+def trainModel(df):
     '''
     Trains a decision tree classifier 
 
-    Args: Xtrain, Ytrain -- Training features and labels to train on
+    Args: df -- Data to train on
 
     Returns: clf -- trained model 
     '''
 
+    Xtrain = df.iloc[:,:-1]
+    Ytrain = df.iloc[:,-1]
     clf = tree.DecisionTreeClassifier(random_state=0)
     clf.fit(Xtrain,Ytrain)
     return clf
     
-def testModel(model,Xtest,Ytest):
+
+
+def testModel(model,df):
     ''' 
     Tests model on input data and returns error rate
     
     Args: model -- model to test
-        Xtest, Ytest -- test data and labels
+          df -- Data to train on
     
     Returns: errorRate -- rate of error of model
     '''
 
+    Xtest = df.iloc[:,:-1]
+    Ytest = df.iloc[:,-1]
     testScore = model.score(Xtest, Ytest)
     errorRate = 1-testScore
     return errorRate 
@@ -132,8 +139,6 @@ def splitDataSet(df):
     return halfNan 
 
 
-# converts values with 'missing' to 
-# most common value in column
 def missingToModal(df):
     '''
     Replaces NaN values with modal attribute value
@@ -180,9 +185,9 @@ for col in dfDiscrete.columns:
 
 dfDropNa = adultData.dropna().copy(deep = True)
 dfDropNaEncoded = encodeLabels(dfDropNa, discClasses)
-Xtrain, Xtest, Ytrain, Ytest = trainTestSplit(dfDropNaEncoded)
-model = trainModel(Xtrain,Ytrain)
-errorRate = testModel(model,Xtest,Ytest)
+
+errorRate = kFoldTest(dfDropNaEncoded)
+
 print("Ignored missing attr's error rate = ", errorRate)
 
 
@@ -202,20 +207,17 @@ D2 = missingToModal(D1)
 # Encode datasets
 D1Encoded = encodeLabels(D1,discClasses)
 D2Encoded = encodeLabels(D2,discClasses)
+DEncoded = encodeLabels(adultDataOrig,discClasses)
 
 # Train on D1 data and test on D
-Xtrain = D1Encoded.iloc[:,:-1]
-Ytrain = D1Encoded.iloc[:,-1]
-model = trainModel(Xtrain,Ytrain)
-errorRate = testModel(model,Xtest,Ytest)
-print("D1 error rate = ", errorRate)
+model = trainModel(D1Encoded)
+D1ErrorRate = testModel(model,DEncoded)
+print("D1 error rate = ", D1ErrorRate)
 
 
 # Train on D2 data and test on D
-Xtrain = D2Encoded.iloc[:,:-1]
-Ytrain = D2Encoded.iloc[:,-1]
-model = trainModel(Xtrain,Ytrain)
-errorRate = testModel(model,Xtest,Ytest)
-print("D2 error rate = ", errorRate)
+model = trainModel(D2Encoded)
+D2ErrorRate = testModel(model,DEncoded)
+print("D2 error rate = ", D2ErrorRate)
 
 
